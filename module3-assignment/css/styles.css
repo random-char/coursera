@@ -11,9 +11,7 @@ body {
   height: 50px; 
   visibility: hidden; 
 }
-.inactiveLink {
-   pointer-events: none;
-}
+
 /*header*/
 button {
   background-color: #aaaaaa;
