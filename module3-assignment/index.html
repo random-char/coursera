@@ -6,12 +6,14 @@
   <meta name="viewport" content="width=device-width, intial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet"> 
   <title>Module 3 Assignment</title>
 </head>
 <body>
 
-    <header>
-      <nav id="navbar" class="navbar navbar-default">
+
+    <header id="top">
+      <nav id="navbar" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
             <div class="navbar-brand">
@@ -29,15 +31,15 @@
           <div id="collapsable-nav" class="collapse navbar-collapse">
            <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs text-center">
             <li>
-              <a href="#">
+              <a href="#chicken">
               <br class="hidden-xs">Chicken</a>
             </li>
             <li>
-              <a href="#">
+              <a href="#beef">
               <br class="hidden-xs">Beef</a>
             </li>
             <li>
-              <a href="#">
+              <a href="#sushi">
               <br class="hidden-xs">Sushi</a>
             </li>
           </ul>
@@ -52,40 +54,51 @@
      <div class="container">
        <div class="row">
 
-         <div id="chicken" class="col-md-4 col-sm-6 col-xs-12 content-box">
-          <div class="section-title text-center">Chicken</div>
-          <div class="section-content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </div>
+         <div id="chicken" class="col-md-4 col-sm-6 col-xs-12">
+           <div class="content-box">
+            <h3 class="section-title text-center">Chicken</h3>
+            <div class="section-content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+            End of chicken section: <a href="#main-content">Back to top</a>
+            </div>
+           </div>
          </div>
 
-         <div id="beef" class="col-md-4 col-sm-6 col-xs-12 content-box">
-          <div class="section-title text-center">Beef</div>
-          <div class="section-content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </div>
+         <div id="beef" class="col-md-4 col-sm-6 col-xs-12">
+           <div class="content-box">
+            <h3 class="section-title text-center">Beef</h3>
+            <div class="section-content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+            End of beef section: <a href="#main-content">Back to top</a>
+            </div>
+           </div>
          </div>
 
-         <div id="sushi" class="col-md-4 col-sm-12 col-xs-12 content-box">
-          <div class="section-title text-center">Sushi</div>
-          <div class="section-content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </div>
+         <div class="clearfix visible-sm-block"></div>
+
+         <div id="sushi" class="col-md-4 col-sm-12 col-xs-12">
+           <div class="content-box">
+            <h3 class="section-title text-center">Sushi</h3>
+            <div class="section-content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+            End of sushi section: <a href="#main-content">Back to top</a>
+            </div>
+           </div>
          </div>
 
        </div> <!-- end of row -->
@@ -95,6 +108,11 @@
 
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script> 
+  <script src="js/script.js"></script>
+  <script type="text/javascript">
+    var shiftWindow = function() { scrollBy(0, -50) };
+    if (location.hash) shiftWindow();
+    window.addEventListener("hashchange", shiftWindow);
+  </script>
 </body>
 </html>
